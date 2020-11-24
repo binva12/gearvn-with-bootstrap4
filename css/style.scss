@@ -15,12 +15,19 @@
 }
 header {
   .fix {
+    width: 100%;
+    position: fixed;
+    z-index: 9999;
     #top-banner {
     }
     #top-header {
+      background: #f1f0f1;
+      border-bottom: 1px solid #d4d4d4;
+      padding: 10px 0;
       .container {
         .row {
           .right-header {
+            position: relative;
             display: flex;
             float: right;
             width: 85%;
@@ -28,6 +35,7 @@ header {
               position: relative;
               flex: 1;
               padding: 0 3px;
+              align-items: center;
               .search {
                 transform: translateY(25%);
                 border: 2px solid #e1e1e1;
@@ -42,7 +50,6 @@ header {
 
                 form.searchbox {
                   margin-bottom: 0;
-
                   input.inputbox {
                     border: none;
                     background: none;
@@ -64,7 +71,8 @@ header {
                 }
               }
             }
-            .test {
+            .gearvn-right-top-block-parent {
+              position: relative;
               flex: 1;
               padding-left: 0;
               .gearvn-right-top-block {
@@ -106,12 +114,45 @@ header {
                 }
               }
             }
+            .gearvn-info-top {
+              position: absolute;
+              align-items: center;
+              bottom: -5px;
+              margin-left: 20px;
+              ul {
+                display: flex;
+                margin: 0;
+                padding: 0;
+                li {
+                  list-style: none;
+                  margin-right: 25px !important;
+                  padding-right: 25px !important;
+                  display: flex;
+                  align-items: center;
+                  color: #ea1c00;
+                  font-weight: 700;
+                  text-transform: uppercase;
+                  border-right: 2px solid #ea1c00;
+                  line-height: 11px;
+                  span {
+                    font-size: 14px;
+                    white-space: nowrap;
+                  }
+                  img {
+                    width: 18px;
+                    margin-right: 10px;
+                  }
+                }
+              }
+            }
           }
         }
       }
     }
   }
   #top-navigation {
+    position: relative;
+    top: 133.53px;
     .container {
       .row {
         height: 312.75px;
